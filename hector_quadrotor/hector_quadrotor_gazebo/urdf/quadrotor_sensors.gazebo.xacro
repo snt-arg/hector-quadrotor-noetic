@@ -61,6 +61,17 @@
             <frameName>$(arg world_frame)</frameName>
           </plugin>
 
+          <plugin filename="libgazebo_ros_p3d.so" name="p3d_base_controller">
+            <alwaysOn>true</alwaysOn>
+            <updateRate>10.0</updateRate>
+            <bodyName>base_link</bodyName>
+            <topicName>platform/ground_truth_odometry</topicName>
+            <gaussianNoise>0.01</gaussianNoise>
+            <frameName>world</frameName>
+            <xyzOffsets>0 0 0</xyzOffsets>
+            <rpyOffsets>0 0 0</rpyOffsets>
+    </plugin>
+
         </gazebo>
   </xacro:macro>
 

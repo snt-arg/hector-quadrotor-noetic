@@ -104,49 +104,49 @@ def takeoff_fun():
 def up_fun():
     setText("Up")
     vel_msg = Twist()
-    vel_msg.linear.z = float(1.0)
+    vel_msg.linear.z = float(0.3)
     vel_pub.publish(vel_msg)
 
 def down_fun():
     setText("Down")
     vel_msg = Twist()
-    vel_msg.linear.z = float(-1.0)
+    vel_msg.linear.z = float(-0.3)
     vel_pub.publish(vel_msg)
 
 def forward_fun():
     setText("Fordward")
     vel_msg = Twist()
-    vel_msg.linear.x = float(1.0)
+    vel_msg.linear.x = float(0.3)
     vel_pub.publish(vel_msg)
 
 def backward_fun():
     setText("Backward")
     vel_msg = Twist()
-    vel_msg.linear.x = float(-1.0)
+    vel_msg.linear.x = float(-0.3)
     vel_pub.publish(vel_msg)
 
 def right_fun():
     setText("Right")
     vel_msg = Twist()
-    vel_msg.linear.y = float(-1.0)
+    vel_msg.linear.y = float(-0.3)
     vel_pub.publish(vel_msg)
 
 def left_fun():
     setText("Left")
     vel_msg = Twist()
-    vel_msg.linear.y = float(1.0)
+    vel_msg.linear.y = float(0.3)
     vel_pub.publish(vel_msg)
 
 def cw_fun():
     setText("Turn Right")
     vel_msg = Twist()
-    vel_msg.angular.z = float(-1.0)
+    vel_msg.angular.z = float(-0.3)
     vel_pub.publish(vel_msg)
 
 def ccw_fun():
     setText("Turn Left")
     vel_msg = Twist()
-    vel_msg.angular.z = float(1.0)
+    vel_msg.angular.z = float(0.3)
     vel_pub.publish(vel_msg)
 
 #-------------- Despliegue datos de odometria y altura -------------------------

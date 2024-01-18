@@ -6,8 +6,11 @@
   <arg name="gui" default="true"/>
   <arg name="headless" default="false"/>
   <arg name="debug" default="false"/>
+  <arg name="world_path" default="$(find hector_gazebo_worlds)/worlds/stairs.world" doc="Path to the world file"/>
+
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name"   value="$(arg world_path)"/>
     <arg name="paused" value="$(arg paused)"/>
     <arg name="use_sim_time" value="$(arg use_sim_time)"/>
     <arg name="gui" value="$(arg gui)"/>
@@ -18,3 +21,4 @@
   <include file="$(find hector_quadrotor_gazebo)/launch/spawn_quadrotor.launch" />
     <arg name="model" value="$(find hector_quadrotor_description)/urdf/quadrotor_hokuyo_utm30lx.gazebo.xacro"/> 
 </launch>
+

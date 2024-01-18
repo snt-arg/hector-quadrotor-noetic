@@ -35,4 +35,10 @@
     </xacro:sonar_sensor>
 
   </xacro:macro>
+
+    <!-- Velodyne -->
+    <xacro:include filename="$(find hector_sensors_description)/urdf/velodyne_vlp16.urdf.xacro" />
+    <xacro:velodyne_vlp16 name="velodyne" parent="base_link">
+      <origin xyz="0.0 0.0 0.03585" rpy="0 0 0"/>
+    </xacro:velodyne_vlp16>
 </robot>
