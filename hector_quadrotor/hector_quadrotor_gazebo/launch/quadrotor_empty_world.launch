@@ -6,7 +6,7 @@
   <arg name="gui" default="true"/>
   <arg name="headless" default="false"/>
   <arg name="debug" default="false"/>
-  <arg name="world_path" default="$(find hector_gazebo_worlds)/worlds/stairs.world" doc="Path to the world file"/>
+  <arg name="world_path" default="$(find hector_gazebo_worlds)/worlds/stugalux_oetrange_two_floors.world" doc="Path to the world file"/>
 
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
